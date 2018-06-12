@@ -6,6 +6,9 @@
     --textgray:#3f3f3f;
     --glowcolor:#ff005b;
     --glowcolor2:#fe3a80;
+    --drumpadcolor:#111;
+    --keyscolor:#1e1e1e;
+
     --mainfont:'Quicksand', sans-serif;
 }
 /***************************** DEFAULTS ***************************************/
@@ -26,6 +29,10 @@ img{
 	max-width: 100%;
 	height: auto;
 }
+.heading{
+    padding: 5% 5% 0;
+    text-align: center;
+}
 .neon{
     margin:0;
     font-size: 3rem;
@@ -42,7 +49,6 @@ img{
     z-index: -1;
     color:var(--glowcolor);
     filter: blur(15px);
-
 }
 .neon::before{
     content: '';
@@ -56,4 +62,23 @@ img{
     z-index:-2;
     opacity: 0.4;
     filter: blur(100px);
+}
+.keypad{
+   background: var(--drumpadcolor);
+   width:70%;
+   margin:0 auto;
+   height:auto;
+   min-height: 19vh;
+   display: flex;
+   flex-direction: row;
+   /* padding: 0.5%; */
+   border-radius: 2px;
+   margin-top: 12%;
+}
+.key{
+    background:var(--keyscolor);
+    border-radius: 5px;
+    flex-grow: 1;
+    margin:3px 2px;
+    padding:0 7px;
 }
