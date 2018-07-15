@@ -1,6 +1,6 @@
 /*jshint esversion: 6 */
 console.log("its working");
-window.addEventListener('keydown',function (e){
+window.addEventListener('keydown',function(e){
     console.log(e.keyCode);
     const audio=document.querySelector(`audio[data-key="${e.keyCode}"]`);
     console.log(audio);
@@ -8,8 +8,8 @@ window.addEventListener('keydown',function (e){
     //ifthereisnoaudioreturnfromhere
     if(!audio) return;
     //ifthereisaudioplayit
-    audio.currentTime=0;
+    audio.currentTime=0;//rewind to the start
     audio.play();
 
 
-});
+}); 
