@@ -31,7 +31,7 @@ img{
 }
 .rockit{
     transform: scale(1.05);
-    border:1px solid yellow;
+   /*border:1px solid yellow;*/
 }
 .heading{
     padding: 5% 5% 0;
@@ -89,5 +89,5 @@ img{
 }
 .key:hover{
     transform: scale(1.05);
-    border:1px solid yellow;
+   /* border:1px solid yellow;*/
 }
